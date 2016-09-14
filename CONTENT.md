@@ -14,10 +14,13 @@ Sponsors
 
 ## Header
 
-** Title **
+**Title**
+
 This is for the code creators, change makers, the friends and visionaries, the community builders.
 This is for you. It's your (un)hackathon.
-** Subtitle **
+
+**Subtitle**
+
 On the 22-23th of Octomber we're waiting for JavaScript hackers & beginers alike and all our friends from Romania's JS communities
 to join forces and forever change society's digital core.
 
