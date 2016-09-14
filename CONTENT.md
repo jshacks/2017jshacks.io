@@ -23,6 +23,8 @@ to join forces and forever change society's digital core.
 
 2 Countries, 3 Cities, 200 programmers, 24 hours
 
+Countdown timer
+
 See you in Bucharest, Chisinau, ...
 
 ## Overview
