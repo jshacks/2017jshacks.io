@@ -10,4 +10,4 @@ Free registering starting soon! Be the first to be notified
 
 [email form -> integrated with mailing list (e.g. MailChimp / SendGrid / etc)]
 
-[Facebook, Twitter icons]
+[Share on Facebook, Twitter icons]
