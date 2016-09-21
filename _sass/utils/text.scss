@@ -1,0 +1,11 @@
+.u-textHide {
+  text-indent: 100% !important;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+}
+
+%u-textKern {
+  text-rendering: optimizeLegibility; /* 1 */
+  font-feature-settings: "kern" 1; /* 2 */
+  font-kerning: normal; /* 3 */
+}

@@ -1,1 +1,54 @@
-Hello World
+---
+layout: default
+---
+
+<section class="hero">
+
+  <h1 class="hero-headline">JSHacks</h1>
+
+  <h2 class="hero-date">22-23 Octomber 2016</h2>
+
+  <h3 class="hero-location">Bucharest - Chisinau</h3>
+
+  <p>
+    JavaScript Enthusiasts * Change Makers * Friends and Visionaries * Community Builders<br><br>
+    This event is for you.<br><br>
+    It's your (un)hackathon.
+  </p>
+
+  <div id="clockdiv">
+      Days: <span class="days"></span> -
+      Hours: <span class="hours"></span> -
+      Minutes: <span class="minutes"></span> -
+      Seconds: <span class="seconds"></span>
+  </div>
+
+  <ul class="social">
+    {% if site.github_username %}
+    <li>
+      {% include icon-github.html username=site.github_username %}
+    </li>
+    {% endif %}
+
+    {% if site.twitter_username %}
+    <li>
+      {% include icon-twitter.html username=site.twitter_username %}
+    </li>
+    {% endif %}
+
+    {% if site.facebook_username %}
+    <li>
+      {% include icon-facebook.html username=site.facebook_username %}
+    </li>
+    {% endif %}
+  </ul>
+
+</section>
+
+{% comment %}
+
+
+  <p>[email form -> integrated with mailing list (e.g. MailChimp / SendGrid / etc)]</p>
+
+  <p>[Share on Facebook, Twitter icons]</p>
+{% endcomment %}
