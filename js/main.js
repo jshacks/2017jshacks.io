@@ -1,6 +1,6 @@
 // countdown
 var deadline = 'October 21 2016 23:59:59 GMT+0300';
-
+//testing cache
 function getTimeRemaining(deadline) {
   var t = Date.parse(deadline) - Date.parse(new Date());
   var seconds = Math.floor((t / 1000) % 60);
