@@ -18,10 +18,10 @@ function getTimeRemaining(deadline) {
 
 function initializeClock(id, deadline) {
   var clock = document.getElementById(id);
-  var daysSpan = clock.querySelector('.days');
-  var hoursSpan = clock.querySelector('.hours');
-  var minutesSpan = clock.querySelector('.minutes');
-  var secondsSpan = clock.querySelector('.seconds');
+  var daysSpan = clock.querySelector('.js-countdown-days');
+  var hoursSpan = clock.querySelector('.js-countdown-hours');
+  var minutesSpan = clock.querySelector('.js-countdown-minutes');
+  var secondsSpan = clock.querySelector('.js-countdown-seconds');
 
   function updateClock() {
     var t = getTimeRemaining(deadline);
@@ -40,4 +40,4 @@ function initializeClock(id, deadline) {
   var timeinterval = setInterval(updateClock, 1000);
 }
 
-initializeClock('clockdiv', deadline);
+initializeClock('js-countdown', deadline);

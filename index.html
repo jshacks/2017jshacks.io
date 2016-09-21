@@ -13,15 +13,15 @@ layout: default
   <p>
     JavaScript Enthusiasts * Change Makers * Friends and Visionaries * Community Builders<br><br>
     This event is for you.<br><br>
-    It's your (un)hackathon.
+    Social coding * Workshops * Networking * Challenges
   </p>
 
-  <div id="clockdiv">
-      Days: <span class="days"></span> -
-      Hours: <span class="hours"></span> -
-      Minutes: <span class="minutes"></span> -
-      Seconds: <span class="seconds"></span>
-  </div>
+  <section class="countdown" id="js-countdown">
+      Days: <span class="countdown-segment js-countdown-days"></span>
+      Hours: <span class="countdown-segment js-countdown-hours"></span>
+      Minutes: <span class="countdown-segment js-countdown-minutes"></span>
+      Seconds: <span class="countdown-segment js-countdown-seconds"></span>
+  </section>
 
   <ul class="social">
     {% if site.github_username %}
