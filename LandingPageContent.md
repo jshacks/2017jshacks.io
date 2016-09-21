@@ -2,7 +2,9 @@ JSHacks / 22-23 Octomber 2016 / Bucharest - Chisinau
 
 JavaScript Enthusiasts * Change Makers * Friends and Visionaries * Community Builders
 
-This event is for you. It's your (un)hackathon.
+Social coding * Workshops * Community Activites * Challenges
+
+This event is about you.
 
 (count down)
 
