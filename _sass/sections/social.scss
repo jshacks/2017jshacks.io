@@ -20,5 +20,10 @@
 }
 
 .social-username {
+  display: block;
 
+  width: 0;
+  height: 0;
+
+  overflow: hidden;
 }

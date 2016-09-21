@@ -39,22 +39,22 @@ $top-z:       5;
 
 
 // Fonts
-$ff-alfa: 'Maven Pro', sans-serif;
+$ff-alfa: 'Josefin Sans', sans-serif;
 
-$fs-little:     10px;
-$fs-small:      14px;
+// $fs-little:     10px;
+// $fs-small:      14px;
 $fs-regular:    16px;
-$fs-medium:     18px;
-$fs-large:      20px;
+// $fs-medium:     18px;
+// $fs-large:      20px;
 $fs-big:        24px;
-$fs-biggest:    28px;
+// $fs-biggest:    28px;
 
-$fw-thin:    100;
-$fw-light:   200;
+// $fw-thin:    100;
+// $fw-light:   200;
 $fw-regular: 400;
-$fw-medium:  500;
-$fw-bold:    700;
-$fw-black:   900;
+$fw-medium:  600;
+// $fw-bold:    700;
+// $fw-black:   900;
 
 @import
   "mixins/media",
@@ -63,9 +63,6 @@ $fw-black:   900;
 
   "base/normalize",
   "base/foundation",
-
-  "utils/layout",
-  "utils/text",
 
   "sections/hero",
   "sections/social",

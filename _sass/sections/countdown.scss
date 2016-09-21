@@ -1,7 +1,29 @@
 .countdown {
+  width: 100%;
+  max-width: 650px;
 
+  margin: 50px 0;
+
+  font-size: 0;
 }
 
 .countdown-segment {
+  display: inline-block;
+  vertical-align: middle;
 
+  width: 25%;
+}
+
+.countdown-time {
+  display: block;
+  margin: 0 0 20px;
+
+  font-size: 70px;
+}
+
+.countdown-label {
+  display: block;
+
+  font-size: $fs-regular;
+  text-transform: uppercase;
 }

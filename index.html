@@ -4,23 +4,43 @@ layout: default
 
 <article class="hero">
 
-  <h1 class="hero-headline">JSHacks</h1>
+  <h1 class="hero-headline">
+    {% include icon-logo.svg %}
+    <b class="hero-headlineText">{{ site.title }}</b>
+  </h1>
+
 
   <h2 class="hero-date">22-23 Octomber 2016</h2>
 
   <h3 class="hero-location">Bucharest - Chisinau</h3>
 
-  <p>
+  <p class="hero-body">
     JavaScript Enthusiasts * Change Makers * Friends and Visionaries * Community Builders<br><br>
     Social coding * Workshops * Networking * Challenges<br><br>
     This event is about you.
   </p>
 
   <section class="countdown" id="js-countdown">
-      Days: <span class="countdown-segment js-countdown-days"></span>
-      Hours: <span class="countdown-segment js-countdown-hours"></span>
-      Minutes: <span class="countdown-segment js-countdown-minutes"></span>
-      Seconds: <span class="countdown-segment js-countdown-seconds"></span>
+    <div class="countdown-segment">
+      <span class="countdown-time js-countdown-days"></span>
+      <span class="countdown-label">Days</span>
+    </div>
+
+    <div class="countdown-segment">
+      <span class="countdown-time js-countdown-hours"></span>
+      <span class="countdown-label">Hours</span>
+    </div>
+
+    <div class="countdown-segment">
+      <span class="countdown-time js-countdown-minutes"></span>
+      <span class="countdown-label">Minutes</span>
+    </div>
+
+    <div class="countdown-segment">
+      <span class="countdown-time js-countdown-seconds"></span>
+      <span class="countdown-label">Seconds</span>
+    </div>
+
   </section>
 
   <ul class="social">

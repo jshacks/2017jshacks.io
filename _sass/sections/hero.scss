@@ -8,3 +8,30 @@
 
   text-align: center;
 }
+
+.hero-headline {
+  width: 400px;
+  height: 120px;
+
+  margin: 50px 0;
+
+  > svg {
+
+  }
+}
+
+.hero-headlineText {
+  display: block;
+
+  width: 0;
+  height: 0;
+
+  overflow: hidden;
+}
+
+.hero-body {
+  margin: 50px 0;
+
+  font-size: $fs-big;
+  font-weight: $fw-medium;
+}
