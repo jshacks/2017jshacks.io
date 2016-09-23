@@ -53,11 +53,18 @@
 }
 
 .hero-date {
-  margin: 0 0 10px;
+  margin: 0 0 20px;
+
   font-size: $fs-medium;
 
   @include media(medium) {
+    margin: 0 0 40px;
+
     font-size: $fs-large;
+  }
+
+  @include media(large) {
+    font-size: $fs-big;
   }
 }
 
@@ -67,11 +74,18 @@
 
   font-size: $fs-small;
   font-weight: $fw-medium;
+  line-height: 1.3;
 
   @include media(medium) {
     margin: 0 0 30px;
 
     font-size: $fs-regular;
+  }
+
+  @include media(large) {
+    margin: 0 0 30px;
+
+    font-size: $fs-medium;
   }
 }
 
