@@ -1,8 +1,8 @@
 .countdown {
   width: 100%;
-  max-width: 650px;
+  max-width: 300px;
 
-  margin: 50px 0;
+  margin: 20px 0;
 
   font-size: 0;
 }
@@ -16,14 +16,14 @@
 
 .countdown-time {
   display: block;
-  margin: 0 0 20px;
+  margin: 0 0 5px;
 
-  font-size: 70px;
+  font-size: $fs-large;
 }
 
 .countdown-label {
   display: block;
 
-  font-size: $fs-regular;
-  text-transform: uppercase;
+  font-size: $fs-little;
+  text-transform: lowercase;
 }

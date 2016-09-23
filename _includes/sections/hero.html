@@ -1,0 +1,60 @@
+<article class="hero">
+
+  <h1 class="hero-headline">
+    {% include icon-logo.svg %}
+    <b class="hero-headlineText">{{ site.title }}</b>
+  </h1>
+
+  <h2 class="hero-date">21-23 Octomber 2016<br><small>Bucharest - Chisinau</small></h2>
+
+  <section class="countdown" id="js-countdown">
+    <div class="countdown-segment">
+      <span class="countdown-time js-countdown-days"></span>
+      <span class="countdown-label">Days</span>
+    </div>
+
+    <div class="countdown-segment">
+      <span class="countdown-time js-countdown-hours"></span>
+      <span class="countdown-label">Hours</span>
+    </div>
+
+    <div class="countdown-segment">
+      <span class="countdown-time js-countdown-minutes"></span>
+      <span class="countdown-label">Minutes</span>
+    </div>
+
+    <div class="countdown-segment">
+      <span class="countdown-time js-countdown-seconds"></span>
+      <span class="countdown-label">Seconds</span>
+    </div>
+  </section>
+
+  <p class="hero-body">
+    JavaScript Enthusiasts<br>Change Makers<br>Friends and Visionaries<br>Community Builders<br><br>
+    This event is about you.<br><br>
+    Social coding • Workshops • Networking • Challenges
+  </p>
+
+  <a class="hero-register" href="https://docs.google.com/forms/d/e/1FAIpQLSdLAVD14_u8vWKGQ2gLs8pLvVLSqFb36p_5kbic8gLZV5GPeQ/viewform" target="_blank">Register</a>
+
+  <ul class="social">
+    {% if site.github_username %}
+    <li>
+      {% include icon-github.html username=site.github_username %}
+    </li>
+    {% endif %}
+
+    {% if site.twitter_username %}
+    <li>
+      {% include icon-twitter.html username=site.twitter_username %}
+    </li>
+    {% endif %}
+
+    {% if site.facebook_username %}
+    <li>
+      {% include icon-facebook.html username=site.facebook_username %}
+    </li>
+    {% endif %}
+  </ul>
+
+</article>
