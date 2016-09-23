@@ -29,10 +29,18 @@
 
     fill: $color-white;
   }
-}
 
-.hero-date {
-  font-size: $fs-medium;
+  @include media(medium) {
+    width: 300px;
+    height: 90px;
+
+    margin: 10px 0 30px;
+  }
+
+  @include media(large) {
+    width: 400px;
+    height: 120px;
+  }
 }
 
 .hero-headlineText {
@@ -44,12 +52,27 @@
   overflow: hidden;
 }
 
+.hero-date {
+  margin: 0 0 10px;
+  font-size: $fs-medium;
+
+  @include media(medium) {
+    font-size: $fs-large;
+  }
+}
+
 .hero-body {
   margin: 0 0 20px;
   padding: 0 20px;
 
   font-size: $fs-small;
   font-weight: $fw-medium;
+
+  @include media(medium) {
+    margin: 0 0 30px;
+
+    font-size: $fs-regular;
+  }
 }
 
 .hero-register {
@@ -63,4 +86,10 @@
 
   color: $color-black;
   background-color: rgba($color-white, 0.75);
+
+  @include media(medium) {
+    margin: 0 0 30px;
+
+    font-size: $fs-big;
+  }
 }

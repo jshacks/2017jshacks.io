@@ -5,6 +5,12 @@
   margin: 20px 0;
 
   font-size: 0;
+
+  @include media(medium) {
+    max-width: 400px;
+
+    margin: 40px 0;
+  }
 }
 
 .countdown-segment {
@@ -19,6 +25,10 @@
   margin: 0 0 5px;
 
   font-size: $fs-large;
+
+  @include media(medium) {
+    font-size: $fs-big;
+  }
 }
 
 .countdown-label {
@@ -26,4 +36,8 @@
 
   font-size: $fs-little;
   text-transform: lowercase;
+
+  @include media(medium) {
+    font-size: $fs-medium;
+  }
 }
