@@ -1,4 +1,5 @@
 $menu-transition-duration: 0.2s;
+$header-height: 54px;
 
 $menu-item-height: $spacing-unit * 6;
 $menu-travel: $menu-item-height * 4;
@@ -18,6 +19,7 @@ main {
   z-index: $positive-z;
 
   background-color: $color-bunting;
+
 
   transform: translateY(-100%);
 
@@ -53,7 +55,9 @@ main {
   align-items: center;
   justify-content: space-between;
 
-  padding: $spacing-unit * 2;
+  padding: 0 $spacing-unit * 2;
+
+  height: $header-height;
 
   font-size: 0;
 }
@@ -132,16 +136,16 @@ main {
   }
 }
 
-$menu-item-height: $spacing-unit * 6;
 .Header-menuItem {
   display: block;
   display: flex;
   align-items: center;
 
   height: $menu-item-height;
-  padding: 0 $spacing-unit * 2;
+  padding: 2px $spacing-unit * 2 0;
 
   font-size: $fs-big;
   font-weight: $fw-medium;
   color: $color-white;
+  text-decoration: none;
 }

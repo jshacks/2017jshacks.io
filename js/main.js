@@ -2,8 +2,10 @@ var $window      = $(window);
 var $body        = $('body');
 var $header      = $('.Header');
 var $menuButton  = $('.js-Header-menuButton');
+var $menuItem    = $('.js-menuItem');
 
-var aboutDistance = $('.AboutSection').position().top;
+var menuBarHeight = $('.Header-nav').outerHeight();
+var ideaDistance = $('.IdeaSection').position().top - menuBarHeight;
 
 // mobile menu button
 $menuButton.on('click', function() {
@@ -12,12 +14,20 @@ $menuButton.on('click', function() {
 
 // show menu-bar
 $window.scroll(function() {
-  if ( $window.scrollTop() >= aboutDistance ) {
+  if ( $window.scrollTop() >= ideaDistance ) {
       $header.addClass('is-visible');
   } else {
     $header.removeClass('is-visible');
   }
 });
+
+$menuItem.on('click', function() {
+  var target = $(this).attr('href');
+  var offset = ($body.hasClass('menu-open')) ? -192 - menuBarHeight : 0 - menuBarHeight; // hardcoded $menu-travel from header.scss
+
+  $body.removeClass('menu-open');
+  $(target).velocity('scroll', { duration: 500, easing: 'easeInOutCubic', offset: offset });
+})
 
 
 

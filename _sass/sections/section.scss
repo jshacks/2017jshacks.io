@@ -1,0 +1,7 @@
+.Section {
+  position: relative;
+
+  min-height: calc(100vh - #{$header-height});
+  padding: $spacing-unit * 2;
+}
+
