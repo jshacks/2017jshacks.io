@@ -1,43 +1,43 @@
-.countdown {
-  width: 100%;
-  max-width: 300px;
+// .countdown {
+//   width: 100%;
+//   max-width: 300px;
 
-  margin: 0 0 20px;
+//   margin: 0 0 20px;
 
-  font-size: 0;
+//   font-size: 0;
 
-  @include media(medium) {
-    max-width: 340px;
+//   @include media(medium) {
+//     max-width: 340px;
 
-    margin: 0 0 40px;
-  }
-}
+//     margin: 0 0 40px;
+//   }
+// }
 
-.countdown-segment {
-  display: inline-block;
-  vertical-align: middle;
+// .countdown-segment {
+//   display: inline-block;
+//   vertical-align: middle;
 
-  width: 25%;
-}
+//   width: 25%;
+// }
 
-.countdown-time {
-  display: block;
-  margin: 0 0 5px;
+// .countdown-time {
+//   display: block;
+//   margin: 0 0 5px;
 
-  font-size: $fs-large;
+//   font-size: $fs-large;
 
-  @include media(medium) {
-    font-size: $fs-big;
-  }
-}
+//   @include media(medium) {
+//     font-size: $fs-big;
+//   }
+// }
 
-.countdown-label {
-  display: block;
+// .countdown-label {
+//   display: block;
 
-  font-size: $fs-little;
-  text-transform: lowercase;
+//   font-size: $fs-little;
+//   text-transform: lowercase;
 
-  @include media(medium) {
-    font-size: $fs-medium;
-  }
-}
+//   @include media(medium) {
+//     font-size: $fs-medium;
+//   }
+// }

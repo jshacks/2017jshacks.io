@@ -42,6 +42,17 @@ ul, ol {
   list-style: none;
 }
 
+button {
+  -webkit-appearance: none;
+  appearance: none;
+
+  border: 0;
+
+  &:not(:focus) {
+    outline: 0;
+  }
+}
+
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block;

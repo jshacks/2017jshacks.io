@@ -24,9 +24,7 @@ $breakpoints: (
 
 
 // spacing variables
-$spacing-small:  20px;
-$spacing-medium: 30px;
-$spacing-large:  40px;
+$spacing-unit: 8px;
 
 
 // z-index
@@ -41,11 +39,11 @@ $top-z:       5;
 // Fonts
 $ff-alfa: 'Josefin Sans', sans-serif;
 
-$fs-little:     12px;
-$fs-small:      14px;
+// $fs-little:     12px;
+// $fs-small:      14px;
 $fs-regular:    16px;
 $fs-medium:     18px;
-$fs-large:      20px;
+// $fs-large:      20px;
 $fs-big:        24px;
 // $fs-biggest:    28px;
 
@@ -64,7 +62,9 @@ $fw-medium:  600;
   "base/normalize",
   "base/foundation",
 
+  "sections/header",
   "sections/hero",
-  "sections/social",
-  "sections/countdown"
+  "sections/about",
+  "sections/agenda",
+  "sections/sponsors"
 ;

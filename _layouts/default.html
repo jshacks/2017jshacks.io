@@ -1,20 +1,21 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
 
-  {% include head.html %}
+  {% include base/head.html %}
 
   <body>
 
-    {% include header.html %}
+    {% include base/header.html %}
 
     <main aria-label="Content">
       {{ content }}
     </main>
 
     {% comment %}
-      {% include footer.html %}
+      {% include base/footer.html %}
     {% endcomment %}
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="/js/main.js"></script>
 
   </body>

@@ -1,0 +1,147 @@
+$menu-transition-duration: 0.2s;
+
+$menu-item-height: $spacing-unit * 6;
+$menu-travel: $menu-item-height * 4;
+main {
+  transition: transform $menu-transition-duration ease;
+
+  body.menu-open & {
+    transform: translateY($menu-travel);
+  }
+}
+
+.Header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: $positive-z;
+
+  background-color: $color-bunting;
+
+  transform: translateY(-100%);
+
+  transition: transform 0.2s ease;
+
+  &.is-visible {
+    transform: translateY(0);
+    transition: transform 0.2s ease;
+  }
+
+  transition: transform $menu-transition-duration ease;
+
+  body.menu-open & {
+    transform: translateY($menu-travel);
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+
+    height: $menu-travel;
+
+    background-color: $color-bunting;
+  }
+}
+
+.Header-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: $spacing-unit * 2;
+
+  font-size: 0;
+}
+
+.Header-logo {
+  display: inline-block;
+  fill: $color-white;
+}
+
+.Header-menuButton {
+  position: relative;
+  display: block;
+
+  width: $spacing-unit * 3;
+  height: $spacing-unit * 2 + 1;
+
+  color: $color-white;
+  background-color: transparent;
+
+  padding: 0;
+  font-size: 0;
+
+  outline: 0;
+
+  background: linear-gradient(-45deg, $color-white, $color-white) center no-repeat;
+  background-size: 100% 3px;
+
+  $menu-button-transition: 0.2s ease $menu-transition-duration;
+
+  transition: background-size $menu-button-transition;
+
+  &:before, &:after {
+    content: '';
+    position: absolute;
+
+    left: 0; right: 0;
+    height: 3px;
+
+    background-color: currentColor;
+
+    transition: transform $menu-button-transition;
+  }
+
+  &:before { top: 0; }
+  &:after { bottom: 0; }
+
+  body.menu-open & {
+
+    background-size: 100% 0;
+
+    &:before { transform: rotate(-45deg) translateY(5px) translateX(-5px); }
+    &:after { transform: rotate(45deg) translateY(-5px) translateX(-5px); }
+  }
+}
+
+.Header-menu {
+  position: absolute;
+  left: 0; right: 0;
+  bottom: 100%;
+
+  background-color: $color-rhino;
+
+  > li {
+    position: relative;
+
+    &:not(:last-child):after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: $spacing-unit * 2;
+      right: $spacing-unit * 2;
+
+      height: 1px;
+      background-color: $color-bunting;
+    }
+  }
+}
+
+$menu-item-height: $spacing-unit * 6;
+.Header-menuItem {
+  display: block;
+  display: flex;
+  align-items: center;
+
+  height: $menu-item-height;
+  padding: 0 $spacing-unit * 2;
+
+  font-size: $fs-big;
+  font-weight: $fw-medium;
+  color: $color-white;
+}
