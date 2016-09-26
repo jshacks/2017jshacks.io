@@ -71,7 +71,7 @@ $menu-item-height: $spacing-unit * 6;
     justify-content: center;
 
     padding: $spacing-unit / 2 $spacing-unit * 4 0;
-    height: calc(5vh + #{$spacing-unit * 4});
+    height: calc(7vh + #{$spacing-unit * 2});
 
     @include media(medium) {
       font-size: $fs-bigger;

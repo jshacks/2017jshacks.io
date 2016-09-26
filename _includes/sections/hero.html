@@ -1,13 +1,31 @@
 <article class="HeroSection" id="hero">
 
-  <div class="Section-container">
+  <h1 class="HeroSection-headline">
+    {% include icons/icon-logo.svg %}
+    <b class="HeroSection-headlineText">{{ site.title }}</b>
+  </h1>
 
-    <h1 class="HeroSection-headline">
-      {% include icons/icon-logo.svg %}
-      <b class="HeroSection-headlineText">{{ site.title }}</b>
-    </h1>
+  <section class="Countdown" id="js-countdown">
+    <div class="Countdown-segment">
+      <span class="Countdown-time js-Countdown-days"></span>
+      <span class="Countdown-label">Days</span>
+    </div>
 
-  </div>
+    <div class="Countdown-segment">
+      <span class="Countdown-time js-Countdown-hours"></span>
+      <span class="Countdown-label">Hours</span>
+    </div>
+
+    <div class="Countdown-segment">
+      <span class="Countdown-time js-Countdown-minutes"></span>
+      <span class="Countdown-label">Minutes</span>
+    </div>
+
+    <div class="Countdown-segment">
+      <span class="Countdown-time js-Countdown-seconds"></span>
+      <span class="Countdown-label">Seconds</span>
+    </div>
+  </section>
 
   {% include base/menu.html %}
 
