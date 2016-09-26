@@ -2,7 +2,7 @@ var $window      = $(window);
 var $body        = $('body');
 var $header      = $('.Header');
 var $menuButton  = $('.js-Header-menuButton');
-var $menuItem    = $('.js-menuItem');
+var $menuItem    = $('.js-Menu-item');
 
 var menuBarHeight = $('.Header-nav').outerHeight();
 var ideaDistance = $('.IdeaSection').position().top - menuBarHeight;
