@@ -2,6 +2,19 @@
   position: relative;
 
   min-height: calc(100vh - #{$header-height});
+}
+
+.Section-container {
+
   padding: $spacing-unit * 2;
+
+  @include media(medium) {
+    padding: $spacing-unit * 3;
+  }
+
+  @include media(large) {
+    max-width: 1024px;
+    margin: 0 auto;
+  }
 }
 

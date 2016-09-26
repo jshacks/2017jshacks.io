@@ -27,3 +27,5 @@ facebook_username: jshacks
 markdown: kramdown
 
 google_analytics: UA-84490590-1
+gems:
+- jekyll-autoprefixer

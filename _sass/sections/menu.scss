@@ -20,6 +20,38 @@ $menu-item-height: $spacing-unit * 6;
       background-color: $color-bunting;
     }
   }
+
+  .HeroSection & {
+    position: static;
+
+    background-color: transparent;
+    left: auto; right: auto; bottom: auto;
+
+    > li:after { content: none; }
+
+    @include media(medium) {
+      height: auto;
+
+      > li { display: block; height: auto; }
+    }
+  }
+
+  @include media(medium) {
+    position: static;
+    left: auto; right: auto; bottom: auto;
+
+    height: 100%;
+    margin-right: $spacing-unit * -2;
+
+    background-color: transparent;
+
+    > li {
+      display: inline-block;
+      vertical-align: middle;
+
+      height: 100%;
+    }
+  }
 }
 
 .Menu-item {
@@ -34,4 +66,19 @@ $menu-item-height: $spacing-unit * 6;
   font-weight: $fw-medium;
   color: $color-white;
   text-decoration: none;
+
+  .HeroSection & {
+    justify-content: center;
+
+    padding: $spacing-unit / 2 $spacing-unit * 4 0;
+    height: calc(5vh + #{$spacing-unit * 4});
+
+    @include media(medium) {
+      font-size: $fs-bigger;
+    }
+  }
+
+  @include media(medium) {
+    height: 100%;
+  }
 }

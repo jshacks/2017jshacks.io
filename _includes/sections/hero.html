@@ -1,9 +1,15 @@
 <article class="HeroSection" id="hero">
 
-  <h1 class="HeroSection-headline">
-    {% include icons/icon-logo.svg %}
-    <b class="HeroSection-headlineText">{{ site.title }}</b>
-  </h1>
+  <div class="Section-container">
+
+    <h1 class="HeroSection-headline">
+      {% include icons/icon-logo.svg %}
+      <b class="HeroSection-headlineText">{{ site.title }}</b>
+    </h1>
+
+  </div>
+
+  {% include base/menu.html %}
 
   {% comment %}
 

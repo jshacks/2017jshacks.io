@@ -59,10 +59,19 @@ main {
   height: $header-height;
 
   font-size: 0;
+
+  @include media(large) {
+    max-width: 1024px;
+    margin: 0 auto;
+
+    padding: 0 $spacing-unit * 3;
+  }
 }
 
 .Header-logo {
   display: inline-block;
+  vertical-align: middle;
+
   fill: $color-white;
 }
 
@@ -81,8 +90,10 @@ main {
 
   outline: 0;
 
-  background: linear-gradient(-45deg, $color-white, $color-white) center no-repeat;
+  background-image: linear-gradient(-45deg, $color-white, $color-white);
   background-size: 100% 3px;
+  background-position: center center;
+  background-repeat: no-repeat;
 
   $menu-button-transition: 0.2s ease $menu-transition-duration;
 
@@ -109,5 +120,9 @@ main {
 
     &:before { transform: rotate(-45deg) translateY(5px) translateX(-5px); }
     &:after { transform: rotate(45deg) translateY(-5px) translateX(-5px); }
+  }
+
+  @include media(medium) {
+    display: none;
   }
 }

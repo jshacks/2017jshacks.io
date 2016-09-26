@@ -7,6 +7,17 @@ var $menuItem    = $('.js-Menu-item');
 var menuBarHeight = $('.Header-nav').outerHeight();
 var ideaDistance = $('.IdeaSection').position().top - menuBarHeight;
 
+
+window.addEventListener("resize", function() {
+  var menuBarHeight = $('.Header-nav').outerHeight();
+  var ideaDistance = $('.IdeaSection').position().top - menuBarHeight;
+});
+
+$(window).resize(function() {
+  var menuBarHeight = $('.Header-nav').outerHeight();
+  var ideaDistance = $('.IdeaSection').position().top - menuBarHeight;
+});
+
 // mobile menu button
 $menuButton.on('click', function() {
   $body.toggleClass('menu-open');
