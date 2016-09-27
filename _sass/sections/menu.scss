@@ -31,6 +31,7 @@ $menu-item-height: $spacing-unit * 6;
 
     @include media(medium) {
       height: auto;
+      margin: 0 0 $spacing-unit * 3;
 
       > li { display: block; height: auto; }
     }

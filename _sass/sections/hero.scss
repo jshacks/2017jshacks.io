@@ -47,6 +47,25 @@
   overflow: hidden;
 }
 
+.hero-register {
+  margin: 0 0 20px;
+  padding: 8px 25px;
+
+  font-size: $fs-large;
+
+  border-radius: 1px;
+  text-decoration: none;
+
+  color: $color-black;
+  background-color: rgba($color-white, 0.75);
+
+  @include media(medium) {
+    margin: 0 0 30px;
+
+    font-size: $fs-big;
+  }
+}
+
 // .hero-date {
 //   margin: 0 0 20px;
 
@@ -81,24 +100,5 @@
 //     margin: 0 0 30px;
 
 //     font-size: $fs-medium;
-//   }
-// }
-
-// .hero-register {
-//   margin: 0 0 20px;
-//   padding: 8px 25px;
-
-//   font-size: $fs-large;
-
-//   border-radius: 1px;
-//   text-decoration: none;
-
-//   color: $color-black;
-//   background-color: rgba($color-white, 0.75);
-
-//   @include media(medium) {
-//     margin: 0 0 30px;
-
-//     font-size: $fs-big;
 //   }
 // }
