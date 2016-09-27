@@ -1,7 +1,8 @@
 .Section {
   position: relative;
+  padding: $spacing-unit $spacing-unit * 3;
 
-  min-height: calc(100vh - #{$header-height});
+  // min-height: calc(100vh - #{$header-height});
 
   h1 {
     margin: 0 0 $spacing-unit * 3;
@@ -22,8 +23,7 @@
   }
 
   @include media(medium) {
-    min-height: 50vh;
-    padding-top: $spacing-unit * 2;
+    padding: $spacing-unit * 2 $spacing-unit * 4;
 
     h1 {
       margin: 0 0 $spacing-unit * 5;
