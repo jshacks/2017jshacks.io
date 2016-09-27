@@ -43,7 +43,7 @@ $menuItem.on('click', function() {
 
 
 // countdown
-var deadline = 'October 21 2016 23:59:59 GMT+0300';
+var deadline = 'October 21 2016 17:00:00 GMT+0300';
 
 function getTimeRemaining(deadline) {
   var t = Date.parse(deadline) - Date.parse(new Date());

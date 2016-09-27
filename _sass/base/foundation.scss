@@ -23,7 +23,7 @@ body {
   }
 
   font-size: $fs-regular;
-  line-height: 1.3;
+  line-height: 1.4;
 }
 
 body, html {
@@ -38,6 +38,10 @@ main {
 h1, h2, h3, h4, h5, h6, ul {
   margin: 0;
   padding: 0;
+}
+
+p {
+  font-weight: $fw-medium;
 }
 
 ul, ol {

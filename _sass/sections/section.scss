@@ -2,6 +2,26 @@
   position: relative;
 
   min-height: calc(100vh - #{$header-height});
+
+  h1 {
+    margin: 0 0 $spacing-unit * 3;
+
+    font-size: $fs-bigger;
+  }
+
+  h2 {
+    margin: 0 0 $spacing-unit * 3;
+
+    font-size: $fs-big;
+  }
+
+  p {
+    margin: 0 0 $spacing-unit * 3;
+  }
+
+  @include media(medium) {
+    min-height: 50vh;
+  }
 }
 
 .Section-container {
