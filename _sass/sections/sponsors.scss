@@ -1,3 +1,13 @@
 .SponsorsSection {
   background-color: $color-bunting;
 }
+
+.SponsorsSection-everymatrix {
+  display: block;
+  width: 300px;
+  margin: 0 auto;
+
+  > img {
+    width: 100%;
+  }
+}
