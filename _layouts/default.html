@@ -1,20 +1,27 @@
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+<html class="no-js">
+  <head>
 
-  {% include head.html %}
+    {% include head.html %}
 
+  </head>
   <body>
+
 
     {% include header.html %}
 
-    <main aria-label="Content">
-      {{ content }}
-    </main>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.3.1/velocity.min.js"></script>
-    <script src="/js/main.js"></script>
+    {{ content }}
 
-  </body>
 
+
+
+
+
+
+
+
+    {% include footer.html %}
+
+    </body>
 </html>
