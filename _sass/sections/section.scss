@@ -7,12 +7,14 @@
     margin: 0 0 $spacing-unit * 3;
 
     font-size: $fs-bigger;
+    text-align: center;
   }
 
   h2 {
-    margin: 0 0 $spacing-unit * 3;
+    margin: $spacing-unit * 6 0 $spacing-unit * 3;
 
     font-size: $fs-big;
+    text-align: center;
   }
 
   p {
@@ -21,6 +23,13 @@
 
   @include media(medium) {
     min-height: 50vh;
+    padding-top: $spacing-unit * 2;
+
+    h1 {
+      margin: 0 0 $spacing-unit * 5;
+
+      font-size: $fs-biggest;
+    }
   }
 }
 
