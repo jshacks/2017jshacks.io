@@ -201,7 +201,7 @@ a:active {
   position: absolute;
   z-index: 1;
 }
-p.small-title {
+p.small-title, #intro a {
   line-height: 28px;
   font-weight: 300;
   font-family: nasalization;
