@@ -73,6 +73,7 @@ body {
     background: url(../img/stars.png) repeat top center;
     z-index: 0;
 }
+
 .Logo {
     animation: logo 1s 1s backwards;
     color: transparent;
@@ -80,8 +81,9 @@ body {
     overflow: hidden;
     margin: 0;
     text-shadow: none;
-    width: 500px;
+    width: 100%;
 }
+
 .font-nasa {
   font-family: nasalization;
 }
@@ -126,16 +128,40 @@ body {
 .svg.svg-white path {
   fill: #ffffff;
 }
-.Mood {
-  position: absolute;
-  top: 0;
-  right: 36px;
+@media (max-width: 1439px) {
+  .mood {
+    display: none;
+  }
 }
-.Mood img {
-  width: 250px;
+@media (min-width: 1220px) {
+  .mood {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 36px;
+  }
+  .mood img {
+    width: 200px;
+  }
+
 }
-.SaveTheDate {
+
+.savethedate {
+    width: 25rem;
+    margin: 0 auto;
+    padding: 0 16px;
     animation: form .8s 1.5s backwards;
+}
+@media (max-width: 425px) {
+  .savethedate {
+      width: 20rem;
+  }
+  .form-submit {
+    margin-top: 10px;
+  }
+}
+#mce-responses {
+  margin-top: 10px;
 }
 
 a {
@@ -166,56 +192,6 @@ h2 sup {
     }
 }
 
-.EmbedModal {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: rgba(0, 0, 0, 0.90);
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 300ms, visibility 0s 300ms;
-}
-
-.EmbedModal.isActive {
-    opacity: 1;
-   visibility: visible;
-   transition-delay: 0s;
-}
-
-.EmbedModal-video {
-    box-shadow: 2px 3px 12px 0 rgba(0,0,0,.4);
-    width: 90vw;
-    position: relative;
-    height: 50.625vw;
-    max-height: calc(90vh - (0px / 16 / 9));
-    max-width: calc((90vh * 16 / 9) - 0px);
-    transform: scale(0) translateZ(0);
-    transition: transform 300ms;
-}
-
-.EmbedModal.isActive .EmbedModal-video {
-    transform: none;
-}
-
-
-
-.EmbedModal iframe {
-    display: block;
-    bottom: 0;
-    height: 100%;
-    left: 0;
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 100%;
-}
-
-
 
 nav {
     position: absolute;
@@ -236,7 +212,7 @@ nav a {
     transition: transform 250ms, opacity 250ms;
 }
 
-.Arrow {
+.arrow {
     display: inline-flex;
     width: 2em;
     height: 2em;
@@ -254,7 +230,7 @@ nav a:hover {
     transform: none;
 }
 
-nav a:hover .Arrow {
+nav a:hover .arrow {
     transform: none;
 }
 
@@ -265,21 +241,21 @@ footer {
     justify-content: space-between;
 }
 
-.FooterLinks {
+.footerlinks {
     display: none;
 }
 
-.FooterLinks-link {
+.footerlinks-link {
     transition: opacity .3s
 }
-.SocialLinks a i {
+.sociallinks a i {
   margin: 0 5px;
 }
-.SocialLinks a i:hover, .FooterLinks a:hover {
+.sociallinks a i:hover, .footerlinks a:hover {
   color: #e9467e;
 }
 
-.SocialLinks-link {
+.sociallinks-link {
     background-repeat: no-repeat;
     background-size: contain;
     background-position: 50%;
@@ -293,44 +269,37 @@ footer {
     width: 1.25rem
 }
 
-.FooterLinks-link:hover,.SocialLinks-link:hover {
+.footerlinks-link:hover, .sociallinks-link:hover {
     opacity: 1
 }
 
-.SocialLinks-twitter {
-    background-image: url(/images/twitter.svg)
-}
-
-.SocialLinks-github {
-    background-image: url(/images/github.svg)
-}
 
 
-.Form {
+.form {
     margin: 0 auto;
     padding: 0 1em;
     max-width: 550px;
     width: 100%;
 }
 
-.Form-input,
-.Form-submit,
-.Form-title {
+.form-input,
+.form-submit,
+.form-title {
     animation: form .8s 3s backwards;
 }
 
-.Form-signup {
+.form-signup {
     display: flex;
     flex-direction: column;
     align-items: stretch;
     width: 100%;
 }
 
-.Form-input {
+.form-input {
     width: 100%;
 }
 
-.Form-title {
+.form-title {
     color: #2e2e2c;
     font-size: .6em;
     padding: 0.4em 1em 1em;
@@ -339,20 +308,20 @@ footer {
     text-transform: uppercase;
 }
 
-.Form-input {
+.form-input {
   animation-delay: 3.4s;
   color: #ffffff;
   padding: 1em;
   font-size: 16px;
   border-bottom: 1px solid #ffffff;
 }
-.Form-input:focus, .Form-input:active {
+.form-input:focus, .form-input:active {
   box-shadow: none;
   outline: none;
   border-bottom: 1px solid #e9467e;
 }
 
-.Form-submit {
+.form-submit {
   animation-delay: 3.44s;
   border: 1px solid #e9467e;
   padding: 1em;
@@ -364,17 +333,17 @@ footer {
   border-radius: 5px;
   margin-left: 5px;
 }
-.Form-submit:hover {
+.form-submit:hover {
   border: 1px solid #ad5fff;
   background: #ad5fff;
 }
 
 @media (min-width: 400px) {
-    .Form-signup {
+    .form-signup {
         flex-direction: row;
     }
 
-    .Form-submit {
+    .form-submit {
         margin-bottom: 0;
     }
 }
@@ -392,17 +361,17 @@ footer {
         right: 2em;
         display: flex
     }
-    .FooterLinks {
+    .footerlinks {
         display: inline-block;
     }
 }
 
-.FadeInLast {
+.fadeinlast {
     animation: form 1s 4s backwards;
     animation: form 1s 4s backwards;
 }
 
-.Center {
+.center {
   margin-top: 5rem;
   z-index: 3333;
 }
