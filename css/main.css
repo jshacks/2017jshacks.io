@@ -16,6 +16,28 @@
     padding: 0;
     margin: 0;
 }
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+@keyframes floatx {
+	0% {
+		transform: translatex(0px);
+	}
+	50% {
+		transform: translatex(-10px);
+	}
+	100% {
+		transform: translatex(0px);
+	}
+}
 
 @keyframes bg {
     0% {
@@ -73,6 +95,21 @@ body {
     background: url(../img/stars.png) repeat top center;
     z-index: 0;
 }
+.white-block {
+    margin-top: 20px;
+    width: 46px;
+    height: 6px;
+    background: #fff;
+}
+.reversed {
+  display: inline-block;
+  -moz-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    transform: scaleX(-1);
+    -ms-filter: fliph; /*IE*/
+    filter: fliph; /*IE*/
+}
 
 .Logo {
     animation: logo 1s 1s backwards;
@@ -129,7 +166,7 @@ body {
   fill: #ffffff;
 }
 @media (max-width: 1439px) {
-  .mood {
+  .mood, .icon-wrapper {
     display: none;
   }
 }
@@ -139,18 +176,37 @@ body {
     position: absolute;
     top: 0;
     right: 36px;
+    transform: translatey(0px);
+  	animation: float 6s ease-in-out infinite;
   }
   .mood img {
     width: 200px;
+  }
+  .icon-wrapper {
+    display: block;
+    position: absolute;
+    left: 32px;
+    bottom: 16rem;
+    transform: translatex(0px);
+    animation: floatx 7s ease-in-out infinite;
   }
 
 }
 
 .savethedate {
-    width: 25rem;
+    width: 30rem;
     margin: 0 auto;
     padding: 0 16px;
     animation: form .8s 1.5s backwards;
+}
+
+.btn-pink {
+  border: 1px solid #e9467e;
+  color: #e9467e;
+}
+.btn-pink:hover, .btn-pink:active, .btn-pink:visited {
+  color: #ffffff;
+  background: #e9467e;
 }
 @media (max-width: 425px) {
   .savethedate {
@@ -313,30 +369,36 @@ footer {
   color: #ffffff;
   padding: 1em;
   font-size: 16px;
-  border-bottom: 1px solid #ffffff;
+  border-bottom: 1px solid #e9467e;
 }
 .form-input:focus, .form-input:active {
   box-shadow: none;
   outline: none;
-  border-bottom: 1px solid #e9467e;
+  border-bottom: 1px solid #ffffff;
+}
+.form-input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #e9467e;
+}
+.form-input::-moz-placeholder { /* Firefox 19+ */
+  color: #e9467e;
+}
+.form-input:-ms-input-placeholder { /* IE 10+ */
+  color: #e9467e;
+}
+.form-input:-moz-placeholder { /* Firefox 18- */
+  color: #e9467e;
 }
 
 .form-submit {
   animation-delay: 3.44s;
-  border: 1px solid #e9467e;
   padding: 1em;
   font-size: 16px;
   margin-bottom: 4em;
   cursor: pointer;
-  background: #e9467e;
-  color: #ffffff;
   border-radius: 5px;
   margin-left: 5px;
 }
-.form-submit:hover {
-  border: 1px solid #ad5fff;
-  background: #ad5fff;
-}
+
 
 @media (min-width: 400px) {
     .form-signup {
