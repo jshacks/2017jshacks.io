@@ -1,0 +1,37 @@
+/*
+  Flaticon icon font: Flaticon
+  Creation date: 06/10/2017 16:35
+  */
+
+@font-face {
+font-family: "flaticon";
+src: url("./flaticon.eot");
+src: url("./flaticon.eot?#iefix") format("embedded-opentype"),
+     url("./flaticon.woff") format("woff"),
+     url("./flaticon.ttf") format("truetype"),
+     url("./flaticon.svg#Flaticon") format("svg");
+font-weight: normal;
+font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+@font-face {
+  font-family: "flaticon";
+  src: url("./flaticon.svg#flaticon") format("svg");
+}
+}
+
+[class^="flaticon-"]:before, [class*="flaticon-"]:before,
+[class^="flaticon-"]:after, [class*="flaticon-"]:after {
+font-family: flaticon;
+font-size: 70px;
+font-style: normal;
+}
+
+.flaticon-presentation:before { content: "\f100"; }
+.flaticon-giftbox:before { content: "\f101"; }
+.flaticon-t-shirt:before { content: "\f102"; }
+.flaticon-sticker:before { content: "\f103"; }
+.flaticon-network:before { content: "\f104"; }
+.flaticon-pizza:before { content: "\f105"; }
+.flaticon-beer:before { content: "\f106"; }

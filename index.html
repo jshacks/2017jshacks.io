@@ -1,77 +1,784 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>JSHacks</title>
-    <link rel="icon" type="image/png" href="icons/favicon.png">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/main.css">
-    <meta property="og:title" content="JSHacks Bucharest">
-    <meta property="og:site_name" content="JSHacks Bucharest">
-    <meta property="og:url" content="http://jshacks.io">
-    <meta property="og:description" content="Romania's JS Hackathon">
-    <meta property="og:type" content="website">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>JSHacks</title>
+
+  <meta name="author" content="JSHacks.io">
+  <meta name="Title" content="JSHacks.io">
+  <meta name="description" content="JS Hacks is an umbrella event, hosting a series of local hackathons organized by developers for developers dedicated to all those passionate about JavaScript and innovation."
+  />
+  <meta name="keywords" content="community, javascript, hackathon, framework, bitcoin, blockchain, etherium, lisk, angularjs bucharest, jsgirls, bucharestjs"
+  />
+  <meta property="og:title" content="jshacks.io">
+  <meta property="og:url" content="https://jshacks.io/" />
+  <meta property="og:description" content="JS Hacks is an umbrella event, hosting a series of local hackathons organized by developers for developers dedicated to all those passionate about JavaScript and innovation."
+  />
+  <meta name="Language" content="EN">
+  <meta name="country" content="Romania">
+
+  <!-- Schema.org markup for Google+ -->
+  <meta itemprop="name" content="jshacks.io">
+  <meta itemprop="description" content="JS Hacks is an umbrella event, hosting a series of local hackathons organized by developers for developers dedicated to all those passionate about JavaScript and innovation."
+  />
+  <meta itemprop="image" content="https://jshacks.io/img/cover.png">
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="JSHacks.io">
+  <meta name="twitter:site" content="@jshacksio" />
+  <meta name="twitter:title" content="jshacks.io">
+  <meta name="twitter:description" content="JS Hacks is an umbrella event, hosting a series of local hackathons organized by developers for developers dedicated to all those passionate about JavaScript and innovation."
+  />
+  <meta name="twitter:creator" content="@jshacksio">
+  <meta name="twitter:image:src" content="https://jshacks.io/img/cover.png">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="JSHacks.io" />
+  <meta property="og:type" content="post" />
+  <meta property="og:url" content="https://jshacks.io/" />
+  <meta property="og:image" content="https://jshacks.io/img/cover.png">
+  <meta property="og:description" content="JS Hacks is an umbrella event, hosting a series of local hackathons organized by developers for developers dedicated to all those passionate about JavaScript and innovation."
+  />
+  <meta property="og:site_name" content="JSHacks.io" />
+
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="fonts/flaticon/flaticon.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Source Sans Pro -->
+  <link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400,700" rel="stylesheet">
+
+  <!-- Booooooootstrap -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+
+  <!-- Styles -->
+  <link rel="stylesheet" type="text/css" href="css/style.css">
 
 
-    <!-- Source Sans Pro -->
-    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:600,700,900' rel='stylesheet' type='text/css'>
+  <!--[if lt IE 9]>
+  <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <script>window.html5 || document.write('<script src="js/vendor/html5shiv.js"><\/script>')</script>
+  <![endif]-->
+</head>
 
-  </head>
-  <body>
-    <div class="wrapper stars"></div>
-    <nav class="fadeinlast">
-      <a href="http://2016.jshacks.io">
-        <h2 class="text-white"><span class="reversed"> ➔ </span> 2016 JSHacks </h2>
-      </a>
-      <div class="white-block"></div>
-    </nav>
-    <header class="savethedate">
-      <img src="img/logo_simple.png" class="Logo">
-      <h2 class="font-nasa text-turquoise">
-          October 20 - 22, 2017
-      </h2>
+<body>
+  <div class="wrapper stars"></div>
+
+
+  <div class="fixed-top rellax" data-rellax-speed="-2">
+    <img src="img/icons/astronaut.svg">
+  </div>
+
+  <main class="main">
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-offset-1 col-md-10 index-5">
+            <div class="row">
+              <nav class="navbar navbar-default mt-30">
+                <div class="container-fluid">
+                  <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#superdupernav">
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand f5" href="https://jshacks.io/">jshacks.io <span> ➔ </span></a>
+                    <div class="white-block hidden-xs hidden-sm"></div>
+                  </div>
+                  <div class="collapse navbar-collapse" id="superdupernav">
+                    <ul class="Menu-list nav navbar-nav pull-right f5">
+                      <li class="active"><a href="#">home</a></li>
+                      <li><a href="#challenges">challenges</a></li>
+                      <li><a href="#agenda">agenda</a></li>
+                      <li><a href="#mentors">mentors</a></li>
+                      <li><a href="#sponsors">sponsors</a></li>
+                      <li><a href="team.html">team</a></li>
+                      <li><a href="#contact">contact</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+        <div class="title">
+          <div class="row">
+            <div class="col-md-offset-2 col-md-8 logo">
+              <img src="img/logo_simple.png">
+            </div>
+          </div>
+        </div>
+        <div class="subtitle">
+          <div class="row text-center hidden-xs hidden-sm">
+            <div class="col-md-offset-2 col-md-2" itemprop="description">
+              <h4 class="f4 text-pink ">JavaScript Enthusiasts </h4>
+            </div>
+            <div class="col-md-2">
+              <h4 class="f4 text-turquoise">Change Makers </h4>
+            </div>
+            <div class="col-md-2">
+              <h4 class="f4 text-green">Friends and Visionaries </h4>
+            </div>
+            <div class="col-md-2">
+              <h4 class="f4 text-orange">Community Builders </h4>
+            </div>
+          </div>
+        </div>
+        <div class="cta fadein">
+          <div class="row index-5 text-center mt-30">
+            <div class="col-md-12">
+              <h3 class="mb-30 font-nasa f3">TechHub Bucharest | 20 - 22 October</h3>
+            </div>
+            <div class="col-md-4 col-md-offset-4">
+              <a href="http://bit.ly/Bucharest-JSHacks2017" class="btn btn-xl btn-pink f4">REGISTER FOR BUCHAREST</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </header>
-    <main class="center">
-      <div class="icon-wrapper">
-        <img src="img/saturn.svg" />
-      </div>
-      <form action="https://jshacks.us14.list-manage.com/subscribe/post?u=a3d7139a19cd3c8996995dcaf&amp;id=d8dd1bc83f" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="form validate" target="_blank" novalidate>
 
-        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_a3d7139a19cd3c8996995dcaf_d8dd1bc83f" tabindex="-1" value=""></div>
 
-        <div class="form-signup">
-          <input id="mce-EMAIL" type="email" value="" name="EMAIL" placeholder="Email address" required="" class="form-input email">
-          <input id="mc-embedded-subscribe" type="submit" value="Subscribe" name="subscribe" class="form-submit button btn-pink">
+
+
+    <section class="section fadein" style="postition:static">
+      <div class="absolute">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-offset-1 col-md-11">
+              <h2 class="rellax f-subheadline" data-rellax-speed="-4">2017 Bucharest</h2>
+              <h2 class="rellax f-subheadline text-orange" data-rellax-speed="-4">Blockchain Edition</h2>
+            </div>
+          </div>
         </div>
-        <div id="mce-responses" class="clear">
-            <div class="response" id="mce-error-response" style="display:none"></div>
-            <div class="response" id="mce-success-response" style="display:none"></div>
+      </div>
+
+      <div class="absolute above" style="margin-top: 0">
+        <div class="container">
+          <div class="row">
+
+            <div class="col-xs-offset-5 col-md-offset-1 col-md-2 visible-md-block visible-lg-block">
+              <div class="rellax" data-rellax-speed="3" style="transform: rotate(45deg)" ;>
+                <img src="img/moons/moon2.png" />
+              </div>
+
+            </div>
+
+            <div class="col-xs-offset-8 col-md-offset-2 col-md-1">
+              <div class="rellax" data-rellax-speed="2" style="transform: rotate(45deg);">
+              </div>
+            </div>
+
+            <div class="colx-xs-offset-2 col-md-offset-3 col-md-1">
+              <div class="rellax" data-rellax-speed="5" style="transform: rotate(45deg);">
+              </div>
+              <div class="col-xs-offset-12 col-md-offset-0">
+                <div class=" rellax" data-rellax-speed="1">
+                  <img src="img/moons/moon1.png" />
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-1">
+              <div class="rellax" data-rellax-speed="3" style="transform: rotate(45deg);">
+              </div>
+            </div>
+
+          </div>
         </div>
-      </form>
-      <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
-      <div class="mood">
-        <img class="svg svg-white" src="icons/astronaut.svg">
-    </div>
-    </main>
-    <footer class="fadeinlast">
-      <div class="footerlinks">
-
-        <a href="http://jshacks.io" class="footerlinks-link">jshacks.io</a> |
-        <a href="mailto:contact@jshacks.io" class="footerlinks-link">contact@jshacks.io</a> |
-        <a href="https://jshacks.slack.com/" class="footerlinks-link" target="_blank"><i class="fa fa-slack" aria-hidden="true"></i></a>
-
       </div>
-      <div class="sociallinks">
-        <a href="https://www.facebook.com/events/554913261366690/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-        <a href="https://twitter.com/jshacksio"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-        <a href="https://github.com/jshacks/"><i class="fa fa-github" aria-hidden="true"></i></a>
-        <a href="https://www.youtube.com/watch?v=ee7jihHD03o"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+    </section>
+
+
+    <section class="section h-vh"></section>
+
+    <section class="section">
+
+      <div class="absolute above mobile-hide" style="pointer-events: none;">
+        <div class="container">
+          <div class="row">
+
+            <div class="col-md-offset-7 col-md-2">
+              <div class="rellax" data-rellax-speed="7">
+                <img src="img/moons/moon3.png" />
+              </div>
+            </div>
+
+            <div class="col-md-offset-0 col-md-1">
+              <div class="rellax" data-rellax-speed="2" style="transform: rotate(45deg);">
+              </div>
+            </div>
+
+            <div class="col-md-offset-9 col-md-5">
+              <div class="rellax" data-rellax-speed="1" style="transform: rotate(2deg);">
+                <img src="img/moons/moon4.png" />
+              </div>
+            </div>
+
+          </div>
+        </div>
       </div>
-    </footer>
-    <script src="main.js"></script>
+
+      <div class="copy">
+        <div class="container" id="challenges">
+          <!-- challenges -->
+          <div class="row mb-30">
+            <div class="col-md-offset-1 col-md-11">
+              <h3 class="text-blue mb-30 f2">Blockchain Challenges</h3>
+
+              <h5 class="f4">This edition's theme is “Blockchain” and we're getting together to solve challenges such as </h5>
+
+              <ul class="f4">
+                <li>Payments, micro-payments and peer-to-peer lending</li>
+                <li> Enable content producers to be paid for what their work</li>
+                <li>Reliable digital identity system</li>
+                <li>Prove ownership of an asset</li>
+                <li>Smooth the shipping process</li>
+                <li>Run a decentralised marketplace</li>
+                <li>Register music copyright</li>
+                <li>Developing e-voting machines for state and national elections</li>
+                <li>Maintaining a national register of land ownership</li>
+                <li>Manage healthcare records</li>
+                <li>Prediction platforms</li>
+                <li>Online gaming</li>
+                <li>Digitalization of documents and contracts</li>
+                <li>Internet of Things and development of smart systems</li>
+              </ul>
+              <h5 class="f4">
+                Have your own challenge you want to hack? Join us and let's build a solution together!
+              </h5>
+            </div>
+          </div>
+
+          <!-- agenda -->
+          <div class="row mt-150" id="agenda">
+            <div class="col-md-offset-3 col-md-9">
+              <h3 class="text-green mb-30 f2">Agenda</h3>
+              <div class="row">
+                <div class="col-md-4">
+                  <p class="f3">
+                    Friday
+                  </p>
+                  <ul class="list-unstyled f5">
+                    <li>
+                      18:30 - Registration
+                    </li>
+                    <li>
+                      19:30 - Opening
+                    </li>
+                    <li>
+                      20:30 - Ideas Presentation & Team Formation
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-md-4">
+                  <p class="f3">
+                    Saturday
+                  </p>
+                  <ul class="list-unstyled f5">
+                    <li>
+                      09:00 - Breakfast
+                    </li>
+                    <li>
+                      10:00 - Hacking Starts
+                    </li>
+                    <li>
+                      11:00 - 13:00 - Blockchain Workshop
+                    </li>
+                    <li>
+                      13:00 - Lunch
+                    </li>
+                    <li>
+                      14:00 - Hacking Continues
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-md-4">
+                  <p class="f3">
+                    Sunday
+                  </p>
+                  <ul class="list-unstyled f5">
+                    <li>
+                      09:00 - Breakfast
+                    </li>
+                    <li>
+                      10:00 - Hacking Continues
+                    </li>
+                    <li>
+                      13:00 - Lunch
+                    </li>
+                    <li>
+                      16:00 - Demos & Ending Ceremony
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- workshop -->
+          <div class="row">
+            <div class="col-md-offset-1 col-md-8 mt-150">
+              <h3 class="text-orange f2">Blockchain Workshop</h3>
+              <h4 class="text-turquoise mb-30 f3">by François-Xavier Thoorens, Ark.io</h4>
+              <p class="f4">
+                ARK provides users, developers, and startups with innovative blockchain technologies. Accessible via push button clone-able
+                blockchains, and our SmartBridge technology. ARK aims to create an entire ecosystem of linked chains and
+                a virtual spiderweb of endless use-cases that make ARK highly flexible, adaptable, and scalable. ARK is a
+                secure platform designed for mass adoption and will deliver the services that consumers want and developers
+                need.
+              </p>
+              <h5 class="text-pink mt-30 text-right f5">Saturday, 21st October</h5>
+            </div>
+          </div>
+
+          <!-- goodies -->
+          <div class="row mt-150">
+            <div class="col-md-3 col-md-offset-3 col-sm-6 col-xs-6">
+              <h3 class="f-5 text-pink"><i class="fa fa-code" aria-hidden="true"></i></h3>
+              <h4 class="font-nasa f4">Coding</h4>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-6">
+              <h3 class="f-5 text-blue"><span class="flaticon-beer"></span></h3>
+              <h4 class="font-nasa f4">Drinks</h4>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-6">
+              <h3 class="f-5 text-green"><span class="flaticon-pizza"></span></h3>
+              <h4 class="font-nasa f4">Food</h4>
+            </div>
+
+            <div class="col-md-3 col-md-offset-3 col-sm-6 col-xs-6">
+              <h3 class="f-5 text-purple"><span class="flaticon-network"></span></h3>
+              <h4 class="font-nasa f4">Networking</h4>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-6">
+              <h3 class="f-5 text-orange"><span class="flaticon-sticker"></span></h3>
+              <h4 class="font-nasa f4">T-shirts</h4>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-6">
+              <h3 class="f-5 text-turquoise"><span class="flaticon-t-shirt"></span></h3>
+              <h4 class="font-nasa f4">Prizez</h4>
+            </div>
+
+            <div class="col-md-3 col-md-offset-3 col-sm-6 col-xs-6">
+              <h3 class="f-5 text-orange"><span class="flaticon-giftbox"></span></h3>
+              <h4 class="font-nasa f4">Mentors</h4>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-6">
+              <h3 class="f-5 text-green"><i class="fa fa-smile-o" aria-hidden="true"></i></h3>
+              <h4 class="font-nasa f4">Connections</h4>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-6">
+              <h3 class="f-5 text-pink"><span class="flaticon-presentation"></span></h3>
+              <h4 class="font-nasa f4">Stickers</h4>
+            </div>
+          </div>
+
+          <!-- jury -->
+          <div class="row mt-150">
+            <div class="col-md-8 col-md-offset-1">
+              <h3 class="text-green mb-30 f2">Jury</h3>
+            </div>
+            <div class="col-md-12">
+              <div class="row">
+                <div class="col-md-3 text-center mt-30">
+                  <div class="user-pic center-block">
+                    <img src="img/mentors/felix-crisan.jpg" />
+                  </div>
+                  <h4 class="font-nasa f3">Felix Crisan</h4>
+                  <h5 class="f5">
+                    Co-Founder & CTO, Netopia Systems
+                  </h5>
+                </div>
+                <div class="col-md-3 text-center mt-30">
+                  <div class="user-pic center-block">
+                    <img src="img/mentors/aurel-iancu.jpeg" />
+                  </div>
+                  <h4 class="font-nasa f3">Aurel Iancu</h4>
+                  <h5 class="f5">
+                    Blockchain Industries & Ethereum Romania Lead
+                  </h5>
+                </div>
+                <div class="col-md-3 text-center mt-30">
+                  <div class="user-pic center-block">
+                    <img src="img/mentors/francois.png" />
+                  </div>
+                  <h4 class="font-nasa f3">François-Xavier Thoorens</h4>
+                  <h5 class="f5">
+                    Head of Development, Ark.io
+                  </h5>
+                </div>
+                <div class="col-md-3 text-center mt-30">
+                  <div class="user-pic center-block">
+                    <img src="img/mentors/bogdan-raduta.jpg" />
+                  </div>
+                  <h4 class="font-nasa f3">Bogdan Raduta</h4>
+                  <h5 class="f5">
+                    CTO, Qualitance
+                  </h5>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- mentors -->
+          <div class="row mt-150" id="mentors">
+            <!-- <div class="col-md-offset-3 col-md-1">
+              <div class="rellax" data-rellax-speed="1" style="transform: rotate(45deg);">
+                <img src="img/moons/moon5.png" />
+              </div>
+            </div> -->
+            <div class="col-md-offset-4 col-md-8">
+              <h3 class="text-orange mb-30 f2">Mentors</h3>
+            </div>
+            <div class="col-md-12">
+              <!-- mentor one -->
+              <div class="row">
+                <div class="col-md-3 col-md-offset-4 user-pic">
+                  <img src="img/mentors/felix-crisan.jpg" />
+                </div>
+                <div class="col-md-6">
+                  <h4 class="font-nasa f3">Felix Crisan</h4>
+                  <h5 class="f5 fw-300">
+                    Felix has over 20 years of experience in the IT and Telecom industry and he undertook several roles from programmer and researcher
+                    to consultant. He coordinated numerous multinational consultancy teams and is involved in developing
+                    simple to complex platforms that use web services, big data, machine learning or blockchain. He is
+                    currently co-founder and CTO at NETOPIA, the company that operates the mobilPay, mobilPay Wallet
+                    or web2sms services.
+                  </h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row mt-150">
+            <!-- mentor two -->
+            <div class="col-md-3 col-md-offset-1 user-pic">
+              <img src="img/mentors/alex-badiu.jpg" />
+            </div>
+            <div class="col-md-7">
+              <h4 class="font-nasa f3">Alexandru Badiu</h4>
+              <h5 class="f5 fw-300">
+                Alexandru leads the development team at BEN, using javascript to put Bumblebee in Transformers, BabyBjorn in The Hangover
+                or a Heineken in the hand of James Bond.
+              </h5>
+            </div>
+          </div>
+
+          <div class="row mt-150">
+            <div class="col-md-offset-1 col-md-1">
+            </div>
+            <div class="col-md-offset-2 col-md-8">
+              <div class="row">
+                <div class="col-md-12">
+                  <!-- mentor one -->
+                  <div class="row">
+                    <div class="col-md-3 user-pic">
+                      <img src="img/mentors/bogdan-raduta.jpg" />
+                    </div>
+                    <div class="col-md-9">
+                      <h4 class="font-nasa f3">Bogdan Raduta</h4>
+                      <h5 class="f5 fw-300">
+                        CTO Qualitance. Solution architect that use the latest technologies to build a fast, reliable digital product. Addicted to startup
+                        culture, love to work hands-on on products and see how an idea can become reality.
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row mt-150">
+            <!-- mentor two -->
+            <div class="col-md-3 col-md-offset-1 user-pic">
+              <img src="img/mentors/francois.png" />
+            </div>
+            <div class="col-md-7">
+              <h4 class="font-nasa f3">François-Xavier Thoorens</h4>
+              <h5 class="f5 fw-300">
+                François-Xavier is a full stack developer (MetorJS and Grails) and has primarily served as scientific officer for the European
+                Union architecting the use of satellite observation for maritime surveillance, his work being referenced
+                by European commission, NATO, Black Sea Commission and ESA. From 2010 he is consultant for different organisation
+                to help them organize around data collection. He was also a core developer of Lisk up until August 2016.
+              </h5>
+            </div>
+          </div>
+
+          <div class="row mt-150">
+            <div class="col-md-offset-1 col-md-1">
+            </div>
+            <div class="col-md-offset-2 col-md-8">
+              <div class="row">
+                <div class="col-md-12">
+                  <!-- mentor one -->
+                  <div class="row">
+                    <div class="col-md-3 user-pic">
+                      <img src="img/mentors/aurel-iancu.jpeg" />
+                    </div>
+                    <div class="col-md-9">
+                      <h4 class="font-nasa f3">Aurel Iancu</h4>
+                      <h5 class="f5 fw-300">
+                        My main focus is to spread knowledge and adoption by working with companies and startups that need guidance in this specific
+                        field. Not being a coder has been pretty frustrating but as time passed by I understood that my mission
+                        is not related to coding. I got involved in several blockchain-related projects and I understood
+                        what's my role in each mechanism. I'm just a small cogwheel in a big consensus machine.
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row mt-150">
+            <!-- mentor two -->
+            <div class="col-md-3 col-md-offset-1 user-pic">
+              <img src="img/mentors/Lucian Boca.png" />
+            </div>
+            <div class="col-md-7">
+              <h4 class="font-nasa f3">Lucian Boca</h4>
+              <h5 class="f5 fw-300">
+                Lucian helped startups design and develop their early-stage products and understands first-hand many of the entrepreneurial challenges
+                that pave the path towards a successful web project. He shifted most of his attention lately to study the impact of emerging blockchain
+                technologies and their use cases in shaping a new distributed, global, open economy.
+              </h5>
+            </div>
+          </div>
+
+          <div class="row mt-150">
+            <div class="col-md-offset-1 col-md-1">
+            </div>
+            <div class="col-md-offset-2 col-md-8">
+              <div class="row">
+                <div class="col-md-12">
+                  <!-- mentor one -->
+                  <div class="row">
+                    <div class="col-md-3 user-pic">
+                      <img src="img/mentors/Adrian Mihai Stratulat.jpg" />
+                    </div>
+                    <div class="col-md-9">
+                      <h4 class="font-nasa f3">Adrian Mihai Stratulat</h4>
+                      <h5 class="f5 fw-300">
+                        A social entrepreneur and innovator specialised in emerging energy technologies, Adrian Stratulat is the co-founder and CEO of
+                        Energo Dynamics, a company that aims to tackle a broad spectre of opportunities and issues in the energy sector by using energy
+                        storage solutions. With a background in geopolitics and diplomacy, energy became his focal point in a holistic, strategic approach
+                        to markets and sectorial policies. He now develops a model for peer to peer trading of energy produced by individual prosumers via
+                        a blockchain-based platform.
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row mt-150">
+            <!-- mentor two -->
+            <div class="col-md-3 col-md-offset-1 user-pic">
+              <img src="img/mentors/Stefan Neagu.jpg" />
+            </div>
+            <div class="col-md-7">
+              <h4 class="font-nasa f3">Stefan Neagu</h4>
+              <h5 class="f5 fw-300">
+                Organization Lead at Ark.io - 27 guys, from all over the world with various expertise covering from NASA engineers or DoD military
+                contracted engineers to Emergency MD, musicians, hedge funds managers to banking consultants and white-hat hackers, working together
+                to bring the best of what blockchain can offer. As a mentor he can help defining scope and choosing the right technology for different
+                blockchain applications: decentralized exchange, payment instruments: online&offline, Token Exchange Campaign, FX over blockchain.
+              </h5>
+            </div>
+          </div>
+
+          <div class="row mt-150">
+            <div class="col-md-offset-1 col-md-1">
+            </div>
+            <div class="col-md-offset-2 col-md-8">
+              <div class="row">
+                <div class="col-md-12">
+                  <!-- mentor one -->
+                  <div class="row">
+                    <div class="col-md-3 user-pic">
+                      <img src="img/mentors/Anish Khan.jpg" />
+                    </div>
+                    <div class="col-md-9">
+                      <h4 class="font-nasa f3">Anish Khan</h4>
+                      <h5 class="f5 fw-300">
+                        Anish has been working in the security and cryptography area for the past 15 years, as a researcher and as a consultant. He has
+                        spent half his career researching cryptographic algorithms and protocols. He has also worked as a strategy consultant for Accenture
+                        and Capgemini. He has been involved in the Blockchain ecosystem as one of the founding members of UKDCA . He is also on the
+                        advisory board for Adjoint, Arteia, Privacy Shell, Collider-X, Ripple Labs, Hyperloop Transport Technologies , EA Ventures,
+                        IEET and Chain of Things. These days he more focussed on projects that involve security vs scalability vs consensus of Blockchain
+                        and using smart contracts for AI safety. He is currently the chief science officer for Blockchainsmokers and Dean of Blockchain
+                        technologies at Exosphere Academy.
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- sponsors -->
+          <div class="row mt-150" id="sponsors">
+            <div class="col-md-12">
+              <h1 class="text-white text-pink f2">Sponsors</h1>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-6 mt-30 index-5">
+              <img src="img/sponsors/ethereum-romania.png" class="sponsorimg" />
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-6 mt-30 index-5">
+              <a href="https://ark.io/">
+                <img src="img/sponsors/the-ark.png" class="sponsorimg" />
+              </a>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-6 mt-30 index-5">
+              <a href="https://www.qualitance.com">
+                <img src="img/sponsors/qualitance.png" class="sponsorimg" />
+              </a>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-6 mt-30 index-5">
+              <a href="https://gopro.com/">
+                    <img src="img/sponsors/go-pro.png" class="sponsorimg" />
+                  </a>
+            </div>
+
+            <div class="col-md-3 col-sm-6 col-xs-6 mt-30 index-5">
+              <a href="https://www.mobilpay.ro">
+                    <img src="img/sponsors/netopia_logo.png" class="sponsorimg" />
+                  </a>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-6 mt-30 index-5">
+              <a href="https://aquacarpatica.com/">
+                <img src="img/sponsors/aqua-carpatica.png" class="sponsorimg" />
+              </a>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-6 mt-30 index-5">
+              <a href="http://www.samburesti.com/">
+                <img src="img/sponsors/domeniile-samburesti.png" class="sponsorimg" />
+              </a>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-6 mt-30 index-5">
+              <a href="http://www.jerryspizza.ro/">
+                <img src="img/sponsors/jerrys-pizza.png" class="sponsorimg" />
+              </a>
+            </div>
+
+          </div>
+
+          <!-- community partners -->
+          <div class="row mt-150">
+            <div class="col-md-12">
+              <h1 class="text-white text-green f2">Community Partners</h1>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-6 mt-30 index-5">
+              <a href="https://codette.ro/">
+                    <img src="img/communities/codette.png" class="commimg" />
+                  </a>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-6 mt-30 index-5">
+              <a href="https://www.facebook.com/frontendbucharest/">
+                      <img src="img/communities/frontendbucharest.png" class="commimg" />
+                    </a>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-6 mt-30 index-5">
+              <a href="https://www.meetup.com/Ethereum-Bucharest/">
+                    <img src="img/communities/ethereum-bucharest.png" class="commimg" />
+                  </a>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-6 mt-30 index-5">
+              <a href="https://www.meetup.com/meetup-group-phSptpIc/">
+                    <img src="img/communities/blockchain-romania.png" class="commimg" />
+                  </a>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-6 mt-30 index-5">
+              <a href="https://bucharest.techhub.com/">
+                    <img src="img/communities/techhub.png" class="commimg" />
+                  </a>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-6 mt-30 index-5">
+              <a href="https://incremental.community/">
+                    <img src="img/communities/incremental-community.png" class="commimg" />
+                  </a>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-6 mt-30 index-5">
+              <a href="https://cofound.it/">
+                    <img src="img/communities/cofoundit.png" class="commimg" />
+                  </a>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-6 mt-30 index-5">
+              <a href="https://steemit.com/">
+                    <img src="img/communities/stemit.png" class="commimg" />
+                  </a>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-6 mt-30 index-5">
+              <a href="http://www.tech-box.ro/">
+                    <img src="img/communities/tech-box.png" class="commimg" />
+                  </a>
+            </div>
+
+
+          </div>
+
+          <div class="row">
+            <div class="col-md-offset-8 col-md-1">
+              <div class="rellax" data-rellax-speed="1" style="transform: rotate(2deg);">
+                <img src="img/moons/moon6.png" />
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="row">
+          <div class="col-md-12 text-center index-5">
+            <h3 class="mb-30 f3">READY? LET'S JS HACK! </h3>
+            <a href="http://bit.ly/Bucharest-JSHacks2017" class="btn btn-xl f4 btn-pink">REGISTER FOR BUCHAREST</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="share" id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-xs-12 contact-btns">
+            <a href="http://jshacks.io" class="f5 hack-link">jshacks.io</a> |
+            <a href="mailto:contact@jshacks.io" class="f5 hack-link">contact@jshacks.io</a> |
+            <a href="https://jshacks.slack.com/" class="f5 hack-link" target="_blank"><i class="fa fa-slack" aria-hidden="true"></i></a>
+          </div>
+          <div class="col-md-6 col-xs-12 social-btns f4">
+            <a href="https://www.facebook.com/jshacks/" class="hack-slink"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href="https://twitter.com/jshacksio" class="hack-slink"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a href="https://github.com/jshacks/" class="hack-slink"><i class="fa fa-github" aria-hidden="true"></i></a>
+            <a href="https://www.youtube.com/watch?v=ee7jihHD03o" class="hack-slink"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- javascript -->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/rellax.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+  <script type="text/javascript" src="js/scripts.js"></script>
+  <script>
+    // Need DEBUG for old version of Rellax.js
+    var DEBUG = false;
+    var rellax = new Rellax('.rellax');
+  </script>
+
+
 
 
 </body>
+
 </html>
